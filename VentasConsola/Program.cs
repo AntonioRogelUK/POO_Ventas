@@ -46,7 +46,7 @@ namespace VentasConsola
         {
             Console.WriteLine($"Fecha de la venta {venta.Fecha:dd/MM/yyyy}");
             Console.WriteLine("");
-            Console.WriteLine("Cantidad Clave\t\tDescripcion\t\t\tValorUnitario\tImporte\tTasaIVA");
+            Console.WriteLine("Cantidad Clave\t\tDescripcion\t\t\tValorUnitario\tImporte\tTasaIVA\tImporteIVA");
             foreach(VentaConceptos concepto in venta.Conceptos) 
             {
                 Console.WriteLine($"{concepto.Cantidad:N2}\t" +
@@ -54,7 +54,8 @@ namespace VentasConsola
                     $"{concepto.Producto.Descripcion}\t" +
                     $"{concepto.ValorUnitario:N2}\t" +
                     $"{concepto.Importe:N2}\t" +
-                    $"{concepto.Producto.TasaIVA:N2}");
+                    $"{concepto.Producto.TasaIVA:N2}\t" +
+                    $"{concepto.ImporteIVA}");
             }
             Console.WriteLine("");
             Console.WriteLine($"Subtotal: {venta.SubTotal:C2}");
