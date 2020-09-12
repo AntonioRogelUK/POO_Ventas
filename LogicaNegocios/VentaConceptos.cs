@@ -8,6 +8,11 @@ namespace LogicaNegocios
 {
     public class VentaConceptos
     {
+        public VentaConceptos()
+        {
+            Producto = new Producto();
+        }
+
         public decimal Cantidad { get; set; }
         public Producto Producto { get; set; }
         public decimal ValorUnitario { 

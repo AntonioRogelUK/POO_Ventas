@@ -8,6 +8,11 @@ namespace LogicaNegocios
 {
     public class Venta
     {
+        public Venta()
+        {
+            Conceptos = new List<VentaConceptos>();
+        }
+
         public DateTime Fecha { get { return DateTime.Now; } }
         public List<VentaConceptos> Conceptos { get; set; }
         public decimal SubTotal { get { return CalcularSubTotal(); } }
@@ -36,6 +41,15 @@ namespace LogicaNegocios
             }
 
             return iva;
+        }
+
+        public void AgregarConcepto(decimal cantidad, Producto producto) 
+        {
+            VentaConceptos concepto = new VentaConceptos();
+            concepto.Cantidad = cantidad;
+            concepto.Producto = producto;
+
+            Conceptos.Add(concepto);
         }
     }
 }
