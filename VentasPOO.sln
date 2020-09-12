@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicaNegocios", "LogicaNeg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentasConsola", "VentasConsola\VentasConsola.csproj", "{7B4731C2-20E9-4660-8FC6-EE74637B01BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentasForms", "VentasForms\VentasForms.csproj", "{C54713BE-664D-45F3-B93C-377B5871CADD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7B4731C2-20E9-4660-8FC6-EE74637B01BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B4731C2-20E9-4660-8FC6-EE74637B01BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B4731C2-20E9-4660-8FC6-EE74637B01BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54713BE-664D-45F3-B93C-377B5871CADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54713BE-664D-45F3-B93C-377B5871CADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54713BE-664D-45F3-B93C-377B5871CADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54713BE-664D-45F3-B93C-377B5871CADD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
